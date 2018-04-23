@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title> Pretty Radio Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .btn_radio_pretty {
+            position: relative;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+
+        /* line 634, components/common/scss/_common.scss */
+        .btn_radio_pretty input[type="radio"] {
+            display: none;
+        }
+
+        /* line 638, components/common/scss/_common.scss */
+        .btn_radio_pretty input[type="radio"] + label span {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-bottom: 0.5em;
+            line-height: 1.2;
+            clear: both;
+            padding-left: 1.8em;
+            height: 35px;
+            width: 35px;
+            overflow: hidden;
+            padding-top: 2px;
+            padding-left: 50px;
+        }
+
+        /* line 652, components/common/scss/_common.scss */
+        .btn_radio_pretty input[type="radio"] + label span:before {
+            position: absolute;
+            content: "";
+            background: #58AED8;
+            border-radius: 0;
+            width: 35px;
+            height: 35px;
+            left: 0;
+            margin-top: -2px;
+            border: 1px dotted #353435;
+        }
+
+        /* line 667, components/common/scss/_common.scss */
+        .btn_radio_pretty input[type="radio"]:checked + label span:before {
+            background: #58AED8;
+            font-family: FontAwesome;
+            content: "\f00c";
+            text-align: center;
+            line-height: 35px;
+            width: 35px;
+            color: #fff;
+        }
+
+        /* line 680, components/common/scss/_common.scss */
+        .btn_radio_pretty input.white[type="radio"] + label span:before {
+            background: #fff;
+        }
+
+        /* line 685, components/common/scss/_common.scss */
+        .btn_radio_pretty input.white[type="radio"]:checked + label span:before {
+            background: #fff;
+            color: #353435;
+        }
+
+        /* line 693, components/common/scss/_common.scss */
+        .btn_radio_pretty input.gray[type="radio"] + label span:before {
+            background: #353435;
+        }
+
+        /* line 698, components/common/scss/_common.scss */
+        .btn_radio_pretty input.gray[type="radio"]:checked + label span:before {
+            background: #353435;
+        }
+
+        /* line 705, components/common/scss/_common.scss */
+        .btn_radio_pretty_textalign {
+            position: relative;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+
+        /* line 711, components/common/scss/_common.scss */
+        .btn_radio_pretty_textalign input[type="radio"] {
+            display: none;
+        }
+
+        /* line 715, components/common/scss/_common.scss */
+        .btn_radio_pretty_textalign input[type="radio"] + label span {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-bottom: 0.5em;
+            line-height: 1.8rem;
+            clear: both;
+            padding: .2rem 0rem 0rem 1.5rem;
+            height: 35px;
+            width: 90px;
+            font-family: FontAwesome;
+            overflow: hidden;
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+        /* line 731, components/common/scss/_common.scss */
+        .btn_radio_pretty_textalign input[type="radio"] + label span i {
+            margin-right: .7rem;
+            font-style: normal;
+        }
+
+        /* line 738, components/common/scss/_common.scss */
+        .btn_radio_pretty_textalign input[type="radio"]:checked + label span {
+            background: #dddddd;
+        }
+
+        /* line 743, components/common/scss/_common.scss */
+        .btn_radio_pretty_textalign input.txtalign-lft[type="radio"] + label span {
+            margin-left: -0.3rem;
+        }
+    </style>
+</head>
+<body>
+<div class="btn_radio_pretty">
+    <input name="draft" type="radio" id="draft" class="blue">
+    <label for="draft"><span> With Label</span></label>
+</div>
+<div class="btn_radio_pretty">
+    <input name="draft" type="radio" id="draft-2" class="blue">
+    <label for="draft-2"><span></span></label>
+</div>
+
+</body>
+</html>
